@@ -1,1 +1,172 @@
-/* Add screen styles below */
+/* ------------------------- */
+/* Background / General Page */
+/* ------------------------- */
+html {
+    background-image: url("images/wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Helvetica', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* -------------- */
+/*     Images     */
+/* -------------- */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* -------------- */
+/*     Banner    */
+/* -------------- */
+.banner {
+    background-color: mistyrose;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.banner h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+}
+
+/* Flexbox for banner */
+.banner-left {
+    flex-grow: 1;
+}
+
+.banner-right {
+    flex-grow: 0;
+}
+
+
+/* -------------- */
+/* Navigation Bar */
+/* -------------- */
+nav {
+    background-color: pink;
+    display: flex;
+    justify-content: space-around;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+/* Flexbox for navigation buttons */
+nav a {
+    color:black;
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 14px;
+}
+
+/* Darker color when hovered */
+nav a:hover {
+    background-color: lightcoral;
+}
+
+
+/* -------------- */
+/*     Footer     */
+/* -------------- */
+footer {
+    background-color: pink;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    font-size: 14px;
+    border-top: 3px solid black;
+    padding: 10px 0;
+}
+
+
+/* -------------- */
+/*  Page Content  */
+/* -------------- */
+.home,
+.about,
+.steam,
+.serve {
+    width: 80%;
+    margin: 20px auto 80px;
+    text-align: center;
+}
+
+
+/* -------------- */
+/*     Blocks     */
+/* -------------- */
+.block {
+    background-color: pink;
+    border: 2px solid black;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    margin: 45px 0;
+    border-radius: 10px;
+}
+
+.block-title,
+.block-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+/* Left side of block */
+.block-title {
+    width: 30%;
+    font-size: 20px;
+    border-right: 2px solid black;
+}
+
+/* Right side of block */
+.block-content {
+    width: 70%;
+    text-align: center;
+}
+
+/* Less space for first block */
+#steam,
+#about {
+    margin-top: 30px;
+}
+
+/* Larger for about page */
+.about .block {
+    height: 200px;
+}
+
+
+/* -------------- */
+/*  Blog Articles */
+/* -------------- */
+article {
+    background-color: pink;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* Center & Space out tables */
+article table {
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 10px;
+}
